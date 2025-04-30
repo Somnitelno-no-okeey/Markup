@@ -1,0 +1,169 @@
+html {
+    font-size: 16px;
+}
+
+body,
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: var(--color-light-black);
+  line-height: calc(1em + 8px);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #808080 !important;
+}
+button {
+    cursor: pointer;
+}
+
+body,
+html,
+#root {
+    height: 100%;
+}
+
+
+/* Добавим стили именно для карточки профиля */
+:root {
+    --color-main: #254ca9;
+    --color-dangerous: #ef302b;
+    --color-gray: #666666;
+    --color-light-gray: #8b96a6;
+    --color-light-black: #333333;
+    --color-dark-white: #f6f6f6;
+    --color-white: #ffffff;
+  
+    --radius-S: 12px;
+    --radius-M: 16px;
+    --radius-L: 24px;
+    --radius-XL: 32px;
+  
+    --transition: all 0.2s ease-in-out;
+  }
+  
+  h3 {
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 30px;
+    text-align: center;
+    color: var(--color-main);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Основной контейнер */
+  .edit-card {
+    background: var(--color-white);
+    width: 410px;
+    min-height: 380px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Контейнер с заголовком */
+  .title {
+    width: 362px;
+    height: 60px;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title h3 {
+    width: 362px;
+    line-height: 30px;
+    text-align: center;
+}
+  
+  .inputs-container {
+    display: flex;
+    flex-direction: column;
+    width: 362px;
+    min-height: 184px;
+    height: 184px;
+    margin-bottom:16px ;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .inputs-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 362px;
+    height: 48px;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    border-radius: var(--radius-M);
+    border: 1px solid transparent;
+    background-color: var(--color-dark-white);
+    color: var(--color-light-black);
+  }
+  
+  input::placeholder {
+    color: var(--color-gray);
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid var(--color-main);
+  }
+  
+  /* Состояние ошибки */
+  .inputs-error input {
+    border: 1.5px solid var(--color-dangerous);
+  }
+  .inputs-error{
+    width: 362px;
+    height: 76px;
+  }
+  
+  .error {
+    font-size: 0.75rem;
+    color: var(--color-dangerous);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 250px;
+    height: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+  
+  /* Кнопка */
+.submit-button {
+    width: 362px;
+    height: 3rem;
+    border-radius: var(--radius-M);
+    background-color: var(--color-main);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .submit-button:hover {
+    background-color: #1d3f8e;
+  }

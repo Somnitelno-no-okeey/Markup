@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Профиль</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    
+
+
+  <div class="profile-card">
+      <div class="profile-info">
+        <img src="img/Users.svg" alt="Иконка профиля" class="user-icon">
+        <div class="user-info">
+          <p Class="UserName">UserName</p>
+          <p class="examplemail">example@gmail.com</p>
+        </div>
+
+      </div>
+      <div class="stick">
+      </div>
+      
+      <div class="profile-actions">
+          <a href="edit-info.html" class="button">
+              <img src="img/edit-2.svg" alt="Иконка карандаша">
+              <span>Изменить информацию</span>
+          </a>
+          <a href="change-password.html" class="button">
+              <img src="img/lock.svg" alt="Иконка замка">
+              <span>Изменить пароль</span>
+          </a>
+          <a href="reset-password.html" class="button">
+              <img src="img/message-question.svg" alt="Иконка облака с вопросом">
+              <span>Сбросить пароль</span>
+          </a>
+      </div>
+      
+      <button class="logout-button">Выйти</button>
+  </div>
+
 </body>
 </html>
