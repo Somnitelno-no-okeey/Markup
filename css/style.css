@@ -40,6 +40,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 40px 24px;
     margin: auto;
 }
 
@@ -48,34 +49,30 @@ button {
     align-items: center;
     gap: 16px;
     width: 362px;
-    height: 66px;
-    margin-top: 40px;
-    margin-left:auto;
-    margin-right: auto;
+    height: 52px;
   }
 
 .user-info{
     width: 362px;
     height: 52px;
     text-align: left;
+    
 }
 
-.examlemail{
+.examle-mail{
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #666666;
+    color: var(--color-gray);
     margin-top: 2px;
 }
-.UserName{
+.user-name{
     font-weight: 600;
     font-size: 18px;
-    line-height: 26px; 
     color: #254CA9;
+    margin-bottom: 2px;
 }
 .stick{
-    margin-top: 14px;
-    width: 100%;
+    margin-top: 12px;
+    width: 362px;
     height: 2px;
     border-radius: 2px;
     background-color: #f6f6f6;
@@ -84,7 +81,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 362px;
-    height: 184px;
+    height: 168px;
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: auto;
@@ -99,9 +96,7 @@ button {
     gap: 12px;
     background: none;
     color: #666666;
-    font-size: 16px;
     text-align: left;
-    padding: 10px;
     border-radius: 10px;
     transition: background 0.3s;
     cursor: pointer;
@@ -125,13 +120,12 @@ button {
     border-radius: 10px;
     padding: 10px;
     font-size: 18px;
-    line-height: 26px;
     margin-top: auto;
     transition: background 0.3s;
-    margin-top: 0px;
-    margin-bottom: 42px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 11px;
+    padding-right: 24px;
+    padding-bottom: 11px;
+    padding-left: 24px;
 }
 
 .logout-button:hover {
