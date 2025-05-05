@@ -49,6 +49,8 @@ button {
     align-items: center;
     gap: 16px;
     width: 100%;
+    border-bottom: 2px solid var(--color-dark-white);
+    padding-bottom: 12px;
   }
 
 .user-info{
@@ -68,21 +70,13 @@ button {
     color: var(--color-main);
     margin-bottom: 2px;
 }
-.stick{
-    margin-top: 12px;
-    width: 100%;
-    height: 2px;
-    border-radius: 2px;
-    background-color: var(--color-dark-white);
-}
+
 .profile-actions {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 8px;
     margin-bottom: 8px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .profile-actions a {
@@ -114,16 +108,11 @@ button {
     background: var(--color-dark-white);
     color: var(--color-main);
     width: 100%;
-    font-size: 600;
+    height: 3rem;
+    font-weight: 600;
     border-radius: var(--radius-M);
-    padding: 10px;
     font-size: 18px;
-    margin-top: auto;
     transition: var(--transition);
-    padding-top: 11px;
-    padding-right: 24px;
-    padding-bottom: 11px;
-    padding-left: 24px;
 }
 
 .logout-button:hover {
