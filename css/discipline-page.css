@@ -1,0 +1,232 @@
+html {
+  font-size: 16px;
+}
+
+body,
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: var(--color-light-black);
+  line-height: calc(1em + 8px);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  --color-main: #254ca9;
+  --color-light-main: #7fade0;
+  --color-light-black: #333333;
+  --color-dangerous: #ef302b;
+  --color-gray: #666666;
+  --color-light-gray: #8b96a6;
+  --color-ultra-light-gray: #dddddd;
+  --color-black: #111111;
+  --color-white: #ffffff;
+  --color-dark-white: #f6f6f6;
+  --color-light-blue: #7FADE0;
+
+  --radius-XXS: 4px;
+  --radius-XS: 8px;
+  --radius-S: 12px;
+  --radius-M: 16px;
+  --radius-L: 24px;
+  --radius-XL: 32px;
+  --radius-XXL: 40px;
+
+  --transition: all 0.2s ease-in-out;
+}
+
+.header {
+  padding: 8px 41px;
+  border-bottom: 1px solid var(--color-ultra-light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--color-main);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.user-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  background-color: var(--color-dark-white);
+  padding: 6px;
+}
+
+.main {
+  max-width: 1824px;
+  margin: 0 auto;
+  padding: 29px 48px;
+}
+
+.card {
+  background: var(--color-dark-white);
+  border-radius: var(--radius-L);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.discipline-name .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-left: 32px;
+}
+
+.card-meta p {
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+/* рейтинг */
+.card-rating {
+  color: var(--color-main);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.stars img {
+  width: 32px; 
+  height: 32px;  
+}
+
+.card-subtitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+.discipline-name .icon-text{
+  margin-bottom: 0px;
+}
+.quality-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 32px;
+  margin-top: 8px;
+}
+
+.quality-item .criterion {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+.quality-item-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto; 
+}
+
+.rating-value {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.teachers {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 8px;
+}
+
+.teachers li {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 32px;
+  border-bottom: 1px solid var(--color-ultra-light-gray);
+  padding: 8px 0;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-gray);
+  margin-left: 32px;
+  margin-bottom: 16px;
+}
+
+.card-description{
+  background: var(--color-dark-white);
+  border-radius: var(--radius-L);
+  padding: 24px;
+}
+
+.last-updated {
+  font-size: 1rem;
+  color: var(--color-light-gray);
+  text-align: right;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: var(--color-dark-white);
+  padding: 16px 48px 24px;
+}
+.footer a{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-gray);
+  margin-top: 8px;
+}
+.footer-title {
+  color: var(--color-light-blue);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-gray);
+  margin-top: 8px;
+}
+
+.footer .copyright {
+  color: var(--color-light-blue);
+  font-weight: 600;
+  font-size: 18px;
+}
