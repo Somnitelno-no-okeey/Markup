@@ -4,35 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Дисциплина</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/discipline-page.css">
 </head>
 <body>
   <header class="header">
     <div class="logo">ЛОГО</div>
-    <img src="img/Users.svg" alt="Иконка профиля" class="user-icon">
+    <a href="index.html">
+        <img src="img/Users.svg" alt="Иконка профиля" class="user-icon">
+    </a>
   </header>
 
   <main class="main">
-    <div class="card discipline-name">
+    <div class="card-discipline discipline-name">
       <div class="card-header">
         <div class="icon-text">
-          <img src="img/book.svg" alt="Иконка книги" class="icon">
-          <h2 class="card-title">Название дисциплины</h2>
+          <h1 class="card-title">Название дисциплины</h1>
         </div>
         <div class="card-rating">
+          <p class="overall-rating">Общая оценка:</p>
           <p class="rating-value">3,6</p>
-          <div class="stars">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-          </div>
         </div>
       </div>
       <div class="card-meta">
+        <div class="module">
+        <img src="img/book.svg" alt="Иконка книги" class="icon">
         <p>Модуль: название модуля</p>
+        </div>
         <p>Формат проведения: традиционная</p>
         <p>Тип контроля: зачет</p>
       </div>
@@ -47,7 +45,7 @@
         <img src="img/Question.svg" alt="Иконка вопроса" class="icon">
         <p class="criterion">Интересность дисциплины</p>
         <div class="quality-item-rating">
-          <p class="rating-value">3,6</p>
+          <p class="rating-value-mini">3,6</p>
           <div class="stars">
             <img src="img/Star 1.svg" alt="Звезда оценки">
             <img src="img/Star 1.svg" alt="Звезда оценки">
@@ -61,7 +59,7 @@
         <img src="img/Question.svg" alt="Иконка вопроса" class="icon">
         <p class="criterion">Уровень сложности</p>
         <div class="quality-item-rating">
-          <p class="rating-value">3,6</p>
+          <p class="rating-value-mini">3,6</p>
           <div class="stars">
             <img src="img/Star 1.svg" alt="Звезда оценки">
             <img src="img/Star 1.svg" alt="Звезда оценки">
@@ -71,19 +69,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="card">
-      <div class="icon-text">
-        <img src="img/Icon.svg" alt="Иконка шляпы" class="icon">
-        <h3 class="card-subtitle">Преподаватели</h3>
-      </div>
-      <ul class="teachers">
-        <li>Фамилия Имя Отчество</li>
-        <li>Фамилия Имя Отчество</li>
-        <li>Фамилия Имя Отчество</li>
-        <li>Фамилия Имя Отчество</li>
-      </ul>
     </div>
 
     <div class="card-description">
@@ -96,13 +81,30 @@
       </p>
       <p class="last-updated">Дата последнего изменения: 22.04.2025</p>
     </div>
+
+    <details class="card-teachers">
+      <summary class="icon-text-teachers">
+        <img src="img/Icon.svg" alt="Иконка шляпы" class="icon">
+        <h3 class="card-subtitle">Преподаватели</h3>
+        <button type="button" class="toggle-button" aria-label="Открыть список">
+          <img src="img/icon2.svg" alt="Открывающая стрелка вниз">
+        </button>
+      </summary>
+      <ul class="teachers">
+        <li>Фамилия Имя Отчество</li>
+        <li>Фамилия Имя Отчество</li>
+        <li>Фамилия Имя Отчество</li>
+        <li>Фамилия Имя Отчество</li>
+      </ul>
+    </details>
+
   </main>
 
   <footer class="footer">
     <div class="footer-col">
       <p class="footer-title">Узнать больше:</p>
-      <p class="footer-text">FAQ</p>
-      <p class="footer-text">О нас</p>
+      <p class="footer-text"><a href="#">FAQ</a></p>
+      <p class="footer-text"><a href="#">О нас</a></p>
     </div>
     <div class="footer-col">
       <p class="footer-title">Контакты поддержки:</p>
@@ -111,15 +113,15 @@
     </div>
     <div class="footer-col">
       <p class="footer-title">Обратная связь:</p>
-      <p class="footer-text">Форма оценки сервиса</p>
-      <p class="footer-text">Форма обратной связи</p>
+      <p class="footer-text"><a href="#">Форма оценки сервиса</a></p>
+      <p class="footer-text"><a href="#">Форма обратной связи</a></p>
     </div>
     <div class="footer-col">
       <p class="footer-title">Правовые ссылки:</p>
-      <p class="footer-text">Политика конфиденциальности</p>
-      <p class="footer-text">Пользовательское соглашение</p>
+      <p class="footer-text"><a href="#">Политика конфиденциальности</a></p>
+      <p class="footer-text"><a href="#">Пользовательское соглашение</a></p>
     </div>
-    <div class="footer-col copyright">Copyright</div>
+    <div class="footer-col copyright"><a href="#"></a>Copyright</a></div>
   </footer>
 </body>
 </html>

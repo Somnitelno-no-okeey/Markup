@@ -16,6 +16,17 @@ body,
   box-sizing: border-box;
   user-select: none;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 :root {
   --color-main: #254ca9;
@@ -43,7 +54,7 @@ body,
 
 .header {
   padding: 8px 41px;
-  border-bottom: 1px solid var(--color-ultra-light-gray);
+  border-bottom: 1px solid var(--color-dark-white);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,14 +77,25 @@ body,
 .main {
   max-width: 1824px;
   margin: 0 auto;
-  padding: 29px 48px;
+  padding: 29px 48px 10px;
+  flex-grow: 1;
 }
 
 .card {
   background: var(--color-dark-white);
   border-radius: var(--radius-L);
   padding: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+}
+.card-discipline{
+  padding: 24px 0;
+  margin-bottom: 24px;
+}
+
+.card-teachers{
+  background: var(--color-dark-white);
+  border-radius: var(--radius-L);
+  padding: 24px 24px 32px 24px;
 }
 
 .discipline-name .card-header {
@@ -83,19 +105,20 @@ body,
 }
 
 .card-title {
-  font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 36px;
+  vertical-align: middle;
 }
 
 .card-meta {
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
-  margin-left: 32px;
+  margin-left: 0px;
 }
 
 .card-meta p {
-  color: var(--color-black);
+  color: var(--color-light-black);
   font-weight: 600;
   font-size: 18px;
 }
@@ -104,8 +127,19 @@ body,
   width: 24px;
   height: 24px;
 }
+.icon2{
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+}
 
 .icon-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.icon-text-teachers{
   display: flex;
   align-items: center;
   gap: 8px;
@@ -120,6 +154,13 @@ body,
   align-items: center;
   gap: 16px;
 }
+.overall-rating{
+  font-weight: 700;
+  font-size: 36px;
+  vertical-align: middle;
+  color: var(--color-main);
+
+}
 
 .stars {
   display: flex;
@@ -130,6 +171,13 @@ body,
   width: 32px; 
   height: 32px;  
 }
+
+.module{
+  display: flex;
+  width: 291px;
+  gap: 8px;
+}
+
 
 .card-subtitle {
   font-size: 22px;
@@ -160,8 +208,16 @@ body,
 }
 
 .rating-value {
+  font-weight: 700;
+  font-size: 36px;
+  vertical-align: middle;
+  color: var(--color-main);
+}
+.rating-value-mini {
   font-weight: 600;
   font-size: 22px;
+  vertical-align: middle;
+  color: var(--color-main);
 }
 
 .teachers {
@@ -178,6 +234,31 @@ body,
   padding: 8px 0;
 }
 
+
+.toggle-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  cursor: pointer;
+  display: flex;       
+  align-items: center; 
+  justify-content: center;
+  width: 24px;          
+  height: 24px;
+}
+
+.toggle-button img {
+  width: 24px;
+  height: 24px;
+  display: block; 
+}
+
+/* Поворот стрелки при открытии */
+details[open] .toggle-btn img {
+  transform: rotate(180deg);
+}
+
 .description {
   font-weight: 400;
   font-size: 16px;
@@ -190,6 +271,7 @@ body,
   background: var(--color-dark-white);
   border-radius: var(--radius-L);
   padding: 24px;
+  margin-bottom: 24px;
 }
 
 .last-updated {
