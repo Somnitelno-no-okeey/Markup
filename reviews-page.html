@@ -3,114 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дисциплина</title>
+  <title>Страница отзывов</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/discipline-page.css">
+  <link rel="stylesheet" href="css/reviews-page.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">ЛОГО</div>
-    <a href="index.html">
-        <img src="img/Users.svg" alt="Иконка профиля" class="user-icon">
-    </a>
-  </header>
-
-  <main class="main">
-    <div class="card-discipline discipline-name">
-      <div class="card-header">
-        <div class="icon-text">
-          <h1 class="card-title">Название дисциплины</h1>
+    <header class="header">
+        <div class="logo">ЛОГО</div>
+        <a href="index.html">
+            <img src="img/Users.svg" alt="Иконка профиля" class="user-icon">
+        </a>
+    </header>
+  
+  <main>
+    <section class="discipline-rating">
+        <div class="discipline-page">
+            <img src="img/arrow-circle-left.svg" alt="Стрелка направленная влево" class="icon">
+            <h2 class="discipline-title">Название дисциплины</h2>
         </div>
-        <div class="card-rating">
-          <p class="overall-rating">Общая оценка:</p>
-          <p class="rating-value">3,6</p>
+        <div class="rating-grade">
+            <p>Общая оценка:</p>
+            <p>3.6</p>
         </div>
-      </div>
-      <div class="card-meta">
-        <div class="module">
-        <img src="img/book.svg" alt="Иконка книги" class="icon">
-        <p>Модуль: название модуля</p>
-        </div>
-        <p>Формат проведения: традиционная</p>
-        <p>Тип контроля: зачет</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="icon-text">
-        <img src="img/crown.svg" alt="Иконка короны" class="icon">
-        <h3 class="card-subtitle">Критерии качества</h3>
-      </div>
-      <div class="quality-item">
-        <img src="img/Question.svg" alt="Иконка вопроса" class="icon">
-        <p class="criterion">Интересность дисциплины</p>
-        <div class="quality-item-rating">
-          <p class="rating-value-mini">3,6</p>
-          <div class="stars">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-          </div>
-        </div>
-      </div>
-      <div class="quality-item">
-        <img src="img/Question.svg" alt="Иконка вопроса" class="icon">
-        <p class="criterion">Уровень сложности</p>
-        <div class="quality-item-rating">
-          <p class="rating-value-mini">3,6</p>
-          <div class="stars">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-            <img src="img/Star 1.svg" alt="Звезда оценки">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="icon-text">
-        <img src="img/note-2.svg" alt="Иконка страниц" class="icon">
-        <h3 class="card-subtitle">Описание</h3>
-      </div>
-      <p class="description">
-        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-      </p>
-      <p class="last-updated">Дата последнего изменения: 22.04.2025</p>
-    </div>
-
-    <details class="card">
-      <summary class="icon-text-teachers">
-        <img src="img/Icon.svg" alt="Иконка шляпы" class="icon">
-        <h3 class="card-subtitle">Преподаватели</h3>
-        <span type="button" class="toggle-button" aria-label="Открыть список">
-          <img src="img/icon2.svg" alt="Открывающая стрелка вниз">
-        </span>
-      </summary>
-      <ul class="teachers">
-        <li>Фамилия Имя Отчество</li>
-        <li>Фамилия Имя Отчество</li>
-        <li>Фамилия Имя Отчество</li>
-        <li>Фамилия Имя Отчество</li>
-      </ul>
-    </details>
-
+    </section>
+</section>
     <div class="reviews-section">
-      <div class="icon-text">
+    <div class="icon-text">
         <img src="img/message-2.svg" alt="Иконка комментариев" class="icon">
         <h3 class="card-subtitle">Отзывы</h3>
         <p class="reviews-count">11 111</p>
         <div class="reviews-actions">
-          <button class="btn blue">Написать отзыв</button> 
-          <a href="reviews-page.html" class="btn outline">Посмотреть все отзывы</a>
+          <button class="btn blue">Написать отзыв</button>
         </div>
-      </div>
+    </div>
 
-      <!-- Отзыв 1 -->
-       <div class="review-card">
+    <section class="reviews-header">
+        <form class="sort-form" action="#" method="get">
+            <span class="sort-label">Сортировка по:</span>
+
+            <label class="sort-option">
+                <input type="radio" name="sort" value="date" checked>
+                <span class="sort-text">Дате</span>
+                <img src="img/arrow-up.svg" alt="Стрелка вверх" class="sort-icon">
+            </label>
+
+    <label class="sort-option">
+      <input type="radio" name="sort" value="rating">
+      <span class="sort-text">Рейтингу</span>
+      <img src="img/arrow-up.svg" alt="Стрелка вверх" class="sort-icon">
+    </label>
+
+    <label class="sort-option">
+      <input type="radio" name="sort" value="usefulness">
+      <span class="sort-text">Полезности</span>
+      <img src="img/arrow-up.svg" alt="Стрелка вверх" class="sort-icon">
+    </label>
+  </form>
+</section>
+
+    <!-- Отзыв 1 -->
+    <div class="review-card">
         <div class="review-header">
           <img src="img/Users.svg" alt="Иконка пользователя" class="users-icon">
           <p class="review-author">Фамилия Имя Отчество</p>
@@ -156,10 +109,10 @@
           <img src="img/heart.svg" alt="Сердце(лайк)" class="heart">
           <img src="img/heart-slash.svg" alt="Зачёркнутое сердце">
         </div>
-      </div>
+    </div>
 
-      <!-- Отзыв 2 -->
-       <div class="review-card">
+    <!-- Отзыв 2 -->
+    <div class="review-card">
         <div class="review-header">
           <img src="img/Users.svg" alt="Иконка пользователя" class="users-icon">
           <p class="review-author">Аноним</p>
@@ -205,10 +158,10 @@
           <img src="img/heart.svg" alt="Сердце(лайк)">
           <img src="img/heart-slash.svg" alt="Зачёркнутое сердце">
         </div>
-      </div>
+    </div>
 
-      <!-- Отзыв 3 -->
-       <div class="review-card">
+    <!-- Отзыв 3 -->
+    <div class="review-card">
         <div class="review-header">
           <img src="img/Users.svg" alt="Иконка пользователя" class="users-icon">
           <p class="review-author">Аноним</p>
@@ -250,7 +203,7 @@
           <img src="img/heart.svg" alt="Сердце(лайк)">
           <img src="img/heart-slash.svg" alt="Зачёркнутое сердце">
         </div>
-      </div>
+    </div>
   </main>
 
   <footer class="footer">

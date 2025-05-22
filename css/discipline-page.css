@@ -35,6 +35,7 @@ body {
   --color-dangerous: #ef302b;
   --color-gray: #666666;
   --color-light-gray: #8b96a6;
+  --color-light-gray-9: #999999;
   --color-ultra-light-gray: #dddddd;
   --color-black: #111111;
   --color-white: #ffffff;
@@ -74,10 +75,18 @@ body {
   padding: 6px;
 }
 
+.review-header .users-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  background-color: var(--color-white);
+  padding: 6px;
+}
+
 .main {
   max-width: 1824px;
   margin: 0 auto;
-  padding: 29px 0 10px;
+  padding: 24px 0 0;
   flex-grow: 1;
 }
 
@@ -87,14 +96,15 @@ body {
   padding: 24px;
   margin-bottom: 24px;
 }
+
 .card-discipline{
   padding: 24px 0;
   margin-bottom: 24px;
 }
-.card-{
+.card-teacher{
   background: var(--color-dark-white);
   border-radius: var(--radius-L);
-  padding: 24px 24px 32px;
+  padding: 24px;
 }
 
 .discipline-name .card-header {
@@ -142,7 +152,6 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 16px;
 }
 
 /* рейтинг */
@@ -158,7 +167,14 @@ body {
   font-size: 36px;
   vertical-align: middle;
   color: var(--color-main);
+}
 
+.review-rating{
+  font-weight: 600;
+  font-size: 22px;
+  vertical-align: middle;
+  color: var(--color-main);
+  margin-left: auto;
 }
 
 .stars {
@@ -217,12 +233,14 @@ body {
   font-size: 22px;
   vertical-align: middle;
   color: var(--color-main);
+  margin-left: 4px;
 }
 
 .teachers {
   list-style: none;
   padding-left: 0;
   padding-bottom: 8px;
+  margin-top: 16px;
 }
 
 .teachers li {
@@ -270,6 +288,155 @@ details[open] .toggle-button img {
   font-size: 1rem;
   color: var(--color-light-gray);
   text-align: right;
+}
+
+/* Отзывы */
+.reviews-section {
+  background: var(--color-white);
+  border-radius: var(--radius-M);
+  padding: 0 24px 24px;
+}
+
+.reviews-section .review-card:last-child {
+  margin-bottom: 0; 
+}
+
+.reviews-section .icon-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.reviews-count {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--color-light-gray-9);
+  margin-left: 8px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.review-criteria {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.review-criteria, .quality-item:first-child{
+  margin-top: 0;
+
+}
+
+.criterion{
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-gray);
+}
+
+.criterion-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.criterion-block .stars {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+}
+/* aaa */
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-M);
+  padding: 11px 24px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn.blue {
+  background-color: var(--color-main);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn.outline {
+  background-color: var(--color-dark-white);
+  color: var(--color-main);
+  font-weight: 600;
+  font-size: 18px;
+}
+/* aaa */
+
+.reviews-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.review-card {
+  background: var(--color-dark-white);
+  border-radius: var(--radius-L);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.review-card .quality-item {
+  margin: 0;
+  margin-left: 32px;
+}
+
+.review-author {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-gray)
+}
+
+.review-text {
+  font-size: 14px;
+  color: var(--color-gray);
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.review-date {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-light-gray);
+  margin-left: 32px;
+}
+
+
+.review-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 16px;
+  gap: 8px;
+  color: var(--color-light-black);
+}
+.opinion{
+  margin-left: auto;
+}
+
+.review-footer .stars {
+  display: flex;
+  gap: 4px;
+}
+
+.review-footer img {
+  width: 24px;
+  height: 24px;
+  gap: 16px;
+  cursor: pointer;
+}
+.heart{
+  fill: var(--color-main);
 }
 
 .footer {

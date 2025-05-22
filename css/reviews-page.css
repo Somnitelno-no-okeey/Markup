@@ -1,0 +1,174 @@
+html {
+  font-size: 16px;
+}
+
+body,
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: var(--color-light-black);
+  line-height: calc(1em + 8px);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:root {
+  --color-main: #254ca9;
+  --color-light-main: #7fade0;
+  --color-light-black: #333333;
+  --color-dangerous: #ef302b;
+  --color-gray: #666666;
+  --color-light-gray: #8b96a6;
+  --color-light-gray-9: #999999;
+  --color-ultra-light-gray: #dddddd;
+  --color-black: #111111;
+  --color-white: #ffffff;
+  --color-dark-white: #f6f6f6;
+  --color-light-blue: #7FADE0;
+
+  --radius-XXS: 4px;
+  --radius-XS: 8px;
+  --radius-S: 12px;
+  --radius-M: 16px;
+  --radius-L: 24px;
+  --radius-XL: 32px;
+  --radius-XXL: 40px;
+
+  --transition: all 0.2s ease-in-out;
+}
+
+main{
+    max-width: 1824px;
+    margin: 0 auto;
+    padding: 25px 48px 1px;
+    flex-grow: 1;
+}
+.discipline-page{
+    display: flex;
+     align-items: center;
+    gap: 8px;
+}
+.reviews-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.reviews-section > .icon-text {
+  margin-bottom: 16px;
+}
+.review-card .quality-item {
+  margin: 0;
+  margin-left: 32px;
+}
+
+.discipline-rating{
+    display: flex;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-main);
+    margin-bottom: 32px;
+}
+
+.discipline-title{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-light-black);
+    vertical-align: middle;
+
+}
+.rating-label{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-main);
+}
+
+.rating-value-medium {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-main);
+}
+
+.rating-grade{
+    display: flex;
+    margin-left: auto;
+    gap: 16px;
+}
+.rating-grade p{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-main);
+}
+
+/*  Сортировкa */
+.sort-form {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.sort-form .label{
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 16px;
+}
+
+.sort-label {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--color-light-black);
+}
+
+.sort-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.sort-option input {
+  display: none;
+}
+
+.sort-option span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-light-main);
+
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.sort-option .sort-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+/* Выбранный вариант */
+.sort-option input:checked + span {
+  color: var(--color-main);
+  text-decoration: none;
+}
+
+/* Стрелка у выбранного */
+.sort-option input:checked + span + .sort-icon {
+  display: inline-block;
+}
