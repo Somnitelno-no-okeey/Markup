@@ -52,6 +52,9 @@ body {
 
   --transition: all 0.2s ease-in-out;
 }
+button {
+    cursor: pointer;
+}
 
 main{
     max-width: 1824px;
@@ -63,6 +66,11 @@ main{
     display: flex;
      align-items: center;
     gap: 8px;
+}
+.discipline-page-link{
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 .reviews-header {
   display: flex;
@@ -133,12 +141,16 @@ main{
   font-size: 22px;
   color: var(--color-light-black);
 }
+.sort-label:first-child{
+  margin: 0;
+}
 
 .sort-option {
   display: inline-flex;
   align-items: center;
   gap: 4px;
   cursor: pointer;
+  padding-right: 28px;
 }
 
 .sort-option input {
@@ -160,6 +172,10 @@ main{
   display: none;
   width: 24px;
   height: 24px;
+}
+
+.sort-option:has(input:checked) {
+  background: url('../img/arrow-up.svg') no-repeat right center;
 }
 
 /* Выбранный вариант */
