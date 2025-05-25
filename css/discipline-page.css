@@ -225,10 +225,9 @@ button {
   margin-left: auto; 
 }
 
-.rating-value {
-  font-weight: 700;
-  font-size: 36px;
-  vertical-align: middle;
+.rating-value-medium {
+  font-weight: 600;
+  font-size: 24px;
   color: var(--color-main);
 }
 .rating-value-mini {
