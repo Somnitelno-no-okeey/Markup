@@ -1,0 +1,237 @@
+html {
+      font-size: 16px;
+    }
+
+body,
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: var(--color-light-black);
+    line-height: calc(1em + 8px);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #808080;
+}
+
+:root {
+    --color-main: #254ca9;
+    --color-light-main: #7fade0;
+    --color-light-black: #333333;
+    --color-dangerous: #ef302b;
+    --color-gray: #666666;
+    --color-light-gray: #8b96a6;
+    --color-light-gray-9: #999999;
+    --color-ultra-light-gray: #dddddd;
+    --color-black: #111111;
+    --color-white: #ffffff;
+    --color-dark-white: #f6f6f6;
+    --color-light-blue: #7FADE0;
+
+    --radius-XXS: 4px;
+    --radius-XS: 8px;
+    --radius-S: 12px;
+    --radius-M: 16px;
+    --radius-L: 24px;
+    --radius-XL: 32px;
+    --radius-XXL: 40px;
+
+    --transition: all 0.2s ease-in-out;
+}
+
+button {
+    cursor: pointer;
+}
+
+.filter-panel {
+    width: 410px;
+    height: 1080px;
+    background-color: var(--color-white);
+    padding: 32px 40px 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-panel h3 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.section {
+    margin-bottom: 24px;
+}
+
+.mini-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+    color: var(--color-gray);
+}
+
+.section p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: var(--color-gray);
+}
+
+.range-slider {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-ultra-light-gray);
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.range-slider::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 60%;
+    background-color: var(--color-main);
+    border-radius: 2px;
+}
+
+.rating-inputs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.rating-inputs input {
+    flex: 1;
+    width: 161px;
+    height: 48px;
+    border-radius: var(--radius-S);
+    background-color: var(--color-dark-white);
+    border: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 24px;
+    
+}
+
+.checkbox-row,
+.radio-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.checkbox-row p,
+.radio-row p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  height: 48px;
+  padding: 12px 24px;
+  border-radius: var(--radius-S); 
+  background-color: var(--color-dark-white);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--color-light-black);
+  margin-bottom: 12px;
+}
+
+.link {
+    color: var(--color-main);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.button-row {
+    display: flex;
+    gap: 8px;
+}
+
+
+.btn {
+    flex: 1;
+    height: 40px;
+    border-radius: var(--radius-S);
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn.apply {
+    background-color: var(--color-main);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn.reset {
+    background-color: var(--color-dark-white);
+    color: var(--color-main);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+  background-image: url('../img/tick-square.svg'); /* не выбран */
+}
+
+input[type="checkbox"]:checked {
+  background-image: url('../img/button-chose.svg'); /* выбран */
+}
+
+.radio-row input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  background-image: url("../img/Ellipse 1.svg");  /* НЕ выбран */
+}
+
+.radio-row input[type="radio"]:checked {
+  background-image: url("../img/cd.svg"); /* ВЫБРАН */
+}

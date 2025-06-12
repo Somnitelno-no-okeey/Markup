@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Фильтры</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="css/filter.css" rel="stylesheet">
+</head>
+<body>
+  <div class="filter-panel">
+    <h3>Фильтры</h3>
+
+    <div class="section">
+      <div class="mini-title">Рейтинг</div>
+      <div class="range-slider"></div>
+      <div class="rating-inputs">
+        <input type="text" placeholder="От">
+        <input type="text" placeholder="До">
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" checked>
+        <p>С рейтингом от 4,7</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="mini-title">Модуль</div>
+      <input class="search-input" type="text" placeholder="Поиск....">
+      <div class="checkbox-row"><input type="checkbox"><p>Модуль</p></div>
+      <div class="checkbox-row"><input type="checkbox" checked><p>Модуль</p></div>
+      <div class="checkbox-row"><input type="checkbox"><p>Модуль</p></div>
+      <div class="link">Посмотреть все</div>
+    </div>
+
+    <div class="section">
+      <div class="mini-title">Формат проведения</div>
+      <div class="checkbox-row"><input type="checkbox"><p>Традиционная</p></div>
+      <div class="checkbox-row"><input type="checkbox"><p>Смешанная</p></div>
+      <div class="checkbox-row"><input type="checkbox" checked><p>Онлайн</p></div>
+    </div>
+
+    <div class="section">
+      <div class="mini-title">Тип контроля</div>
+      <div class="radio-row"><input type="radio" name="control"><p>Зачет</p></div>
+      <div class="radio-row"><input type="radio" name="control" checked><p>Экзамен</p></div>
+    </div>
+
+    <div class="button-row">
+      <button class="btn apply">Применить</button>
+      <button class="btn reset">Сбросить</button>
+    </div>
+  </div>
+
+</body>
+</html>

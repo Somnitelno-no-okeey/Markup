@@ -294,18 +294,18 @@ vertical-align: middle;
   align-items: center;
   gap: 32px;
 }
-.sort-form .label{
+.sort-form .p{
     font-weight: 600;
     font-size: 18px;
     margin-right: 16px;
 }
 
-.sort-label {
+.sort-p {
   font-weight: 600;
   font-size: 22px;
   color: var(--color-light-black);
 }
-.sort-label:first-child{
+.sort-p:first-child{
   margin: 0;
 }
 
