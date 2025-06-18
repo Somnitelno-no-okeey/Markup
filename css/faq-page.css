@@ -1,0 +1,245 @@
+html {
+      font-size: 16px;
+    }
+
+body,
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: var(--color-light-black);
+    line-height: calc(1em + 8px);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root {
+  --color-main: #254ca9;
+  --color-light-main: #7fade0;
+  --color-light-black: #333333;
+  --color-dangerous: #ef302b;
+  --color-gray: #666666;
+  --color-light-gray: #8b96a6;
+  --color-light-gray-9: #999999;
+  --color-ultra-light-gray: #dddddd;
+  --color-black: #111111;
+  --color-white: #ffffff;
+  --color-dark-white: #f6f6f6;
+  --color-light-blue: #7FADE0;
+
+  --radius-XXS: 4px;
+  --radius-XS: 8px;
+  --radius-S: 12px;
+  --radius-M: 16px;
+  --radius-L: 24px;
+  --radius-XL: 32px;
+  --radius-XXL: 40px;
+
+  --transition: all 0.2s ease-in-out;
+}
+
+html {
+  font-size: 16px;
+}
+
+body, * {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: var(--color-light-black);
+  line-height: calc(1em + 8px);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.faq-main {
+  max-width: 1824px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 48px; 
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  padding: 8px 41px;
+  border-bottom: 1px solid var(--color-dark-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--color-main);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.user-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  background-color: var(--color-dark-white);
+  padding: 6px;
+}
+
+.faq-card {
+  border-radius: 8px;
+  padding: 24px;
+  background-color: var(--color-dark-white);
+  border-radius: var(--radius-L);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.icon2 {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+}
+
+.card-subtitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+.faq-summary-content {
+    display: flex; 
+    align-items: center;
+    gap: 8px;
+}
+.faq-question{
+    font-weight: 600;
+    font-size: 22px;
+}
+.faq-answer{
+    margin-top: 16px;
+    padding: 16px 0px 0px 32px;
+    border-top: 2px solid var(--color-ultra-light-gray);
+}
+.faq-answer p{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-gray);
+}
+
+.faq-answer li{
+    margin-bottom: 24px;
+}
+
+.faq-help {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+.faq-help a {
+  color: var(--color-main); 
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.toggle-button img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+details summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] .toggle-button img {
+  transform: rotate(180deg);
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: var(--color-dark-white);
+  padding: 16px 48px 24px;
+}
+.footer a{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-gray);
+  margin-top: 8px;
+}
+.footer-title {
+  color: var(--color-light-blue);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-gray);
+  margin-top: 8px;
+}
+
+.footer .copyright {
+  color: var(--color-light-blue);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (min-width: 1838px) {
+  .footer .header {
+    padding-left: calc((100% - 1838px) / 2);
+    padding-right: calc((100% - 1838px) / 2);
+  }
+}
